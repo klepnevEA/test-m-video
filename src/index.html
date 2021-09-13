@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test-m-video</title>
+    <link
+      rel="stylesheet"
+      href="https://static.eldorado.ru/promo/default/css/fonts.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="title-block">
+          <div class="container title-block__container">
+            <div class="title-block__content">
+              <h1 class="title">Классные товары для детей</h1>
+              <div class="sub-title"><div>Выгодно не по-детски</div></div>
+            </div>
+            @@include('./file-include/parallax-block.html')
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <div class="buttons-block">
+            <div class="buttons-block__button">
+              <button class="button button--danger">C шильдиком</button>
+            </div>
+            <div class="buttons-block__button">
+              <button class="button">Без шильдика</button>
+            </div>
+          </div>
+          <div class="slider">
+            <div class="slider__arrows">
+              <a href="#" class="slider__arrow-left">
+                <svg>
+                  <use xlink:href="./img/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+              <a href="#" class="slider__arrow-right">
+                <svg>
+                  <use xlink:href="./img/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <ul class="slider__list" id="slider">
+              <li class="slider__item">
+                @@include('./file-include/cart.html')
+              </li>
+              <li class="slider__item">
+                @@include('./file-include/cart.html')
+              </li>
+              <li class="slider__item">
+                @@include('./file-include/cart.html')
+              </li>
+              <li class="slider__item">
+                @@include('./file-include/cart.html')
+              </li>
+              <li class="slider__item">
+                @@include('./file-include/cart.html')
+              </li>
+              <li class="slider__item">
+                @@include('./file-include/cart.html')
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./js/script.min.js"></script>
+  </body>
+</html>

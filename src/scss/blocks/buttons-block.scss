@@ -1,0 +1,11 @@
+.buttons-block {
+  display: flex;
+  justify-content: center;
+  padding: 0 var(--gap);
+
+  &__button {
+    margin: 0 calc(var(--gap) * 1.5);
+    width: 382px;
+    transform: translateY(-11px);
+  }
+}

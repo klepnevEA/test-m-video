@@ -1,0 +1,22 @@
+$phones: 480px;
+:root {
+  --gap: 10px;
+  /*fonts*/
+  --fontGraphik: "Graphik", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+    "Helvetica Neue", Arial, sans-serif;
+  --DINWebNarrow: "DINWebNarrow", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+    "Helvetica Neue", Arial, sans-serif;
+  /*colors*/
+  --primaryColor: #76bc21;
+  --primaryLightColor: #add77a;
+  --dangerColor: #c10230;
+  --backgroundBannerColor: #f1f4f9;
+  --whiteColor: #fff;
+  --blackColor: #262626;
+  --secondaryColor: #99ccff;
+  --paleColor: #d9d9d9;
+  /*size*/
+  --desktop: 1240px;
+  --laptop: 999px;
+  --ipad: 760px;
+}

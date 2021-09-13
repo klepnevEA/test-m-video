@@ -1,0 +1,25 @@
+.title-block {
+  flex: 0 0 auto;
+  height: 300px;
+  background: radial-gradient(
+      30% 40% at 20% 0%,
+      rgba(#99ccff, 0.5),
+      transparent
+    ),
+    radial-gradient(20% 40% at 20% 110%, rgba(#76bc21, 0.5), transparent),
+    radial-gradient(20% 40% at 80% -10%, rgba(#76bc21, 0.5), transparent),
+    url("../../img/lines.svg") center no-repeat;
+  background-color: var(--backgroundBannerColor);
+
+  &__content {
+    width: 50%;
+    flex: 0 0 auto;
+    padding: calc(var(--gap) * 5.7) 0 calc(var(--gap) * 5.7)
+      calc(var(--gap) * 9);
+  }
+
+  &__container {
+    display: flex;
+    height: 100%;
+  }
+}

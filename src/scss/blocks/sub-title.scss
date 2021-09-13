@@ -1,0 +1,13 @@
+.sub-title {
+  display: inline-block;
+  padding: var(--gap) calc(var(--gap) * 3);
+  font-family: var(--fontGraphik);
+  font-size: 22px;
+  line-height: 27px;
+  background-color: var(--secondaryColor);
+  transform: skew(-12deg);
+
+  div {
+    transform: skew(12deg);
+  }
+}

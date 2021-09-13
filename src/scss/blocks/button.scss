@@ -1,0 +1,24 @@
+.button {
+  font-family: var(--fontGraphik);
+  font-weight: 500;
+  color: var(--whiteColor);
+  padding: var(--gap);
+  background-color: var(--primaryColor);
+  width: 100%;
+  max-width: 382px;
+  height: 55px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background: darken(#76bc21, 10%);
+  }
+
+  &--danger {
+    background-color: var(--dangerColor);
+
+    &:hover {
+      background: darken(#c10230, 10%);
+    }
+  }
+}
