@@ -9,6 +9,7 @@
   height: 55px;
   border-radius: 6px;
   transition: background-color 0.3s;
+  font-size: 21px;
 
   &:hover {
     background: darken(#76bc21, 10%);
@@ -20,5 +21,10 @@
     &:hover {
       background: darken(#c10230, 10%);
     }
+  }
+
+  @include phones() {
+    height: 40px;
+    font-size: 14px;
   }
 }

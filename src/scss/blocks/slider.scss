@@ -12,6 +12,12 @@
     margin: 0 calc(var(--gap) * 1.2);
   }
 
+  &__arrows {
+    @include laptop() {
+      display: none;
+    }
+  }
+
   &__arrow-left,
   &__arrow-right {
     position: absolute;

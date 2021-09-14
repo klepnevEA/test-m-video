@@ -2,10 +2,19 @@
   display: flex;
   justify-content: center;
   padding: 0 var(--gap);
+  margin: 0 -15px;
 
   &__button {
     margin: 0 calc(var(--gap) * 1.5);
     width: 382px;
     transform: translateY(-11px);
+
+    @include phones() {
+      transform: translateY(0);
+    }
+  }
+
+  @include phones() {
+    padding: calc(var(--gap) * 2) 0;
   }
 }

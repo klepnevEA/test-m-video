@@ -1,0 +1,17 @@
+.header {
+  height: 300px;
+  flex: 0 0 auto;
+  overflow: hidden;
+
+  @include desktop() {
+    height: 250px;
+  }
+
+  @include laptop() {
+    height: 200px;
+  }
+
+  @include phones() {
+    height: 150px;
+  }
+}

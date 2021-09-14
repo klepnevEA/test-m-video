@@ -1,3 +1,12 @@
 .main {
   flex: 1 1 auto;
+  padding-bottom: var(--gap);
+
+  @include phones() {
+    overflow-x: auto;
+  }
+
+  &__container {
+    min-width: 760px;
+  }
 }

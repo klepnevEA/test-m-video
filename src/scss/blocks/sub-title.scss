@@ -10,4 +10,19 @@
   div {
     transform: skew(12deg);
   }
+
+  @include desktop() {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  @include laptop() {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @include phones() {
+    font-size: 8px;
+    line-height: 9px;
+  }
 }

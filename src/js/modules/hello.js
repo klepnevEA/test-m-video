@@ -4,6 +4,23 @@ document.addEventListener("DOMContentLoaded", function (event) {
     slidesToScroll: 3,
     nextArrow: ".slider__arrow-right",
     prevArrow: ".slider__arrow-left",
+
+    responsive: [
+      {
+        breakpoint: 1240,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 999,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+    ],
   });
 
   var currentX = "";

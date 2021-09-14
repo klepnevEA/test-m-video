@@ -1,6 +1,6 @@
 .title-block {
   flex: 0 0 auto;
-  height: 300px;
+  height: 100%;
   background: radial-gradient(
       30% 40% at 20% 0%,
       rgba(#99ccff, 0.5),
@@ -16,6 +16,21 @@
     flex: 0 0 auto;
     padding: calc(var(--gap) * 5.7) 0 calc(var(--gap) * 5.7)
       calc(var(--gap) * 9);
+
+    @include desktop() {
+      padding: calc(var(--gap) * 4.7) 0 calc(var(--gap) * 4.7)
+        calc(var(--gap) * 5);
+    }
+
+    @include laptop() {
+      padding: calc(var(--gap) * 3.8) 0 calc(var(--gap) * 3.8)
+        calc(var(--gap) * 2);
+    }
+
+    @include phones() {
+      padding: calc(var(--gap) * 2.8) 0 calc(var(--gap) * 2.8)
+        calc(var(--gap) * 1);
+    }
   }
 
   &__container {

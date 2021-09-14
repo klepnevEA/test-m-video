@@ -5,8 +5,8 @@
   height: 100%;
 
   &__main-img {
-    width: 290px;
-    height: 271px;
+    width: auto;
+    height: 80%;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -20,5 +20,14 @@
 
   &__item {
     position: absolute;
+  }
+
+  & > svg {
+    @include laptop() {
+      transform: scale(0.7, 0.7);
+    }
+    @include phones() {
+      transform: scale(0.5, 0.5);
+    }
   }
 }
